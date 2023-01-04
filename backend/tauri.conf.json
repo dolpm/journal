@@ -28,7 +28,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.tauri-leptos-quickstart.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -57,8 +57,10 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "journal",
-        "width": 800
+        "title": "tauri-leptos-quickstart",
+        "width": 800,
+        "minWidth": 300,
+        "minHeight": 300
       }
     ]
   }

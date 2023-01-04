@@ -2,11 +2,12 @@
     all(not(debug_assertions), target_os = "windows"),
     windows_subsystem = "windows"
 )]
+
 use tauri::Manager;
 
 #[tauri::command]
-fn hello() -> Result<String, String> {
-    Ok("Hello from Tauri :P".to_string())
+fn hello(name: Option<&str>) -> Result<String, String> {
+    Ok(format!("Hello from Tauri, {:?} :P", name))
 }
 
 fn main() {
